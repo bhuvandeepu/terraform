@@ -69,9 +69,9 @@ resource "aws_security_group" "alb_sg" {
 
 resource "aws_launch_template" "launch_template" {
   name          = var.environment
-  image_id      = "ami-09c8132600c548ed5"  # Replace with your AMI ID
+  image_id      = "ami-03f71e078efdce2c9"  # Replace with your AMI ID
   instance_type = "t3.micro"
-  key_name      = "hydra"  # Replace with your SSH key name
+  key_name      = "key1"  # Replace with your SSH key name
 
   iam_instance_profile {
     name = var.iam_instance_profile
