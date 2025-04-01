@@ -1,7 +1,7 @@
 variable "environment" {
 }
 
-variable "aws_vpc" {
+variable "vpc_cidr" {
   default = "10.0.0.0/16"
 }
 
@@ -26,22 +26,22 @@ variable "pvt-subnet-cidr-2" {
 
 variable "avail-zone-pub1" {
   type = string
-  default = "ap-south-2a"
+  default = "eu-north-1a"
 }
 
 variable "avail-zone-pub2" {
   type = string
-  default = "ap-south-2b"
+  default = "eu-north-1b"
 }
 
 variable "avail-zone-pvt1" {
   type = string
-  default = "ap-south-2a"
+  default = "eu-north-1a"
 }
 
 variable "avail-zone-pvt2" {
   type = string
-  default = "ap-south-2b"
+  default = "eu-north-1b"
 }
 
 variable "cidr_pub_route" {
